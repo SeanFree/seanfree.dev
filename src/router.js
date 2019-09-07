@@ -1,15 +1,15 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home'
-import About from './views/About'
-import Contact from './views/Contact'
-import Portfolio from './views/Portfolio'
+import Home from '@/views/Home'
+import About from '@/views/About'
+import Contact from '@/views/Contact'
+import Portfolio from '@/views/Portfolio'
 
 Vue.use(Router)
 
 const router = new Router({
 	mode: 'history',
-	base: '',
+	base: '/',
 	routes: [
 		{
 			name: 'Home',
@@ -28,19 +28,19 @@ const router = new Router({
 			}
 		},
 		{
-			name: 'Contact',
-			path: '/contact',
-			component: Contact,
-			meta: {
-				title: 'Sean Free - Contact'
-			}
-		},
-		{
 			name: 'Portfolio',
 			path: '/portfolio',
 			component: Portfolio,
 			meta: {
 				title: 'Sean Free - Portfolio'
+			}
+		},
+		{
+			name: 'Contact',
+			path: '/contact',
+			component: Contact,
+			meta: {
+				title: 'Sean Free - Contact'
 			}
 		}
 	]
@@ -48,6 +48,8 @@ const router = new Router({
 
 router.beforeEach((to, from, next) => {
 	document.title = to.meta.title
+
+	next()
 })
 
 export default router

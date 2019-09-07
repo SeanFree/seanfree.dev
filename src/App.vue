@@ -1,26 +1,37 @@
 <template lang="pug">
-	main.main
+	div.page-wrapper#app
 		page-header
-		router-view
+		transition(name="fade" mode="out-in")
+			router-view
+		page-footer
 </template>
 
 <script>
-import pageHeader from './components/pageHeader'
+import pageHeader from '@/components/pageHeader'
+import pageTemplate from '@/components/pageTemplate'
+import pageFooter from '@/components/pageFooter'
 
 export default {
 	name: 'App',
 	components: {
-		pageHeader
+		pageHeader,
+		pageTemplate,
+		pageFooter
 	}
 }
 </script>
 
 <style lang="scss">
-@import "./styles/normalize.css";
+@import "./styles/generic/reset.css";
+@import "./styles/main.scss";
 
-html, body {
-	background-color: $gray-10;
-	color: $white;
-	width: 100%;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .3s;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
 }
 </style>

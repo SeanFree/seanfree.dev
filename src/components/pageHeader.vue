@@ -1,19 +1,16 @@
 <template lang="pug">
 	header.page-header
-		primary-nav
+		section.content-wrapper
+			header-nav
 </template>
 
 <script>
-import primaryNav from './primaryNav'
+import headerNav from '@/components/navHeader'
 
 export default {
 	name: 'PageHeader',
 	components: {
-		primaryNav
+		headerNav
 	}
 }
 </script>
-
-<style lang="scss" scoped>
-
-</style>

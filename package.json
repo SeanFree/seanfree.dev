@@ -10,8 +10,6 @@
 	},
 	"dependencies": {
 		"core-js": "^2.6.5",
-		"pug": "^2.0.4",
-		"pug-plain-loader": "^1.0.0",
 		"vue": "^2.6.10",
 		"vue-router": "^3.0.3",
 		"vuex": "^3.0.1"
@@ -28,7 +26,10 @@
 		"eslint": "^5.16.0",
 		"eslint-plugin-vue": "^5.0.0",
 		"node-sass": "^4.9.0",
+		"pug": "^2.0.4",
+		"pug-plain-loader": "^1.0.0",
 		"sass-loader": "^7.1.0",
+		"svg-inline-loader": "^0.8.0",
 		"vue-template-compiler": "^2.6.10"
 	}
 }

@@ -1,0 +1,32 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Oswald Bold';
+}
+
+h1 {
+	font-size: $size-4xl;
+}
+
+h2 {
+	font-size: $size-3xl;
+}
+
+h3 {
+	font-size: $size-2xl;
+}
+
+h4 {
+	font-size: $size-xl;
+}
+
+h5 {
+	font-size: $size-l;
+}
+
+h6 {
+	font-size: $size-m;
+}
