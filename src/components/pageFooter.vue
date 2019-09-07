@@ -1,16 +1,16 @@
 <template lang="pug">
 	footer.page-footer
 		section.content-wrapper
-			footer-nav
+			social-nav
 </template>
 
 <script>
-import footerNav from '@/components/navFooter'
+import socialNav from '@/components/navSocial'
 
 export default {
 	name: 'PageFooter',
 	components: {
-		footerNav
+		socialNav
 	},
 	computed: {
 		pageName () {
@@ -22,8 +22,6 @@ export default {
 
 <style lang="scss" scoped>
 .page-footer {
-	bottom: 0;
-	position: absolute;
 	width: 100%;
 
 	.content-wrapper {

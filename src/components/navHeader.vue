@@ -5,7 +5,7 @@
 				router-link.navigation__link(
 					:key="`nav-link-${route.name}`"
 					:to="route.path"
-					@click.native="updateActiveIndicator($event)"
+					@click.native="updateActiveIndicator"
 				) {{ route.name }}
 		span.navigation__active-indicator(ref="activeIndicator")
 </template>
@@ -22,7 +22,7 @@ export default {
 		}
 	},
 	methods: {
-		updateActiveIndicator ($event) {
+		updateActiveIndicator () {
 			const activeLink = this.$el.querySelector('.router-link-exact-active')
 
 			this.$refs.activeIndicator.style.transform = `translateX(${activeLink.offsetLeft}px) translateZ(0)`

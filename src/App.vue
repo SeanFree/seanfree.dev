@@ -1,5 +1,5 @@
 <template lang="pug">
-	div.page-wrapper#app
+	div#app.page-wrapper
 		page-header
 		transition(name="fade" mode="out-in")
 			router-view
@@ -27,11 +27,13 @@ export default {
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity .3s;
+	transform: translateX(0);
+  transition: opacity $transition-duration-m, transform $transition-duration-m;
 }
 
 .fade-enter,
 .fade-leave-active {
-  opacity: 0;
+	opacity: 0;
+	transform: translateX($space-xl);
 }
 </style>

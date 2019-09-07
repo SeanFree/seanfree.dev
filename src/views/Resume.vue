@@ -1,12 +1,12 @@
 <template lang="pug">
-	page-template
+	page-template.resume-page
 </template>
 
 <script>
 import pageTemplate from '@/components/pageTemplate'
 
 export default {
-	name: 'HomePage',
+	name: 'AboutPage',
 	components: {
 		pageTemplate
 	}

@@ -18,7 +18,7 @@
 import svgIcon from '@/components/svgIcon'
 
 export default {
-	name: 'PrimaryNavigation',
+	name: 'SocialNavigation',
 	components: {
 		svgIcon
 	},
@@ -62,9 +62,10 @@ export default {
 		display: block;
 		padding: $space-s;
 		text-decoration: none;
-		transition: transform $transition-duration-s;
+		transition: color $transition-duration-s, transform $transition-duration-s;
 
 		&:hover {
+			color: $amber-4;
 			transform: scale(1.1);
 		}
 	}

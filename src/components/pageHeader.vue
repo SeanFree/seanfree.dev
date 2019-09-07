@@ -14,3 +14,9 @@ export default {
 	}
 }
 </script>
+
+<style lang="scss" scoped>
+.page-header {
+	width: 100%;
+}
+</style>
