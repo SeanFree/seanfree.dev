@@ -1,25 +1,26 @@
-<template>
-  <div id="app">
-    <router-view />
-  </div>
+<template lang="pug">
+	main.main
+		page-header
+		router-view
 </template>
 
-<style lang="scss">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+import pageHeader from './components/pageHeader'
+
+export default {
+	name: 'App',
+	components: {
+		pageHeader
+	}
 }
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+</script>
+
+<style lang="scss">
+@import "./styles/normalize.css";
+
+html, body {
+	background-color: $gray-10;
+	color: $white;
+	width: 100%;
 }
 </style>
