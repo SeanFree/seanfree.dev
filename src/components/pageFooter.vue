@@ -22,6 +22,7 @@ export default {
 
 <style lang="scss" scoped>
 .page-footer {
+	position: relative;
 	width: 100%;
 
 	.content-wrapper {

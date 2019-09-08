@@ -8,6 +8,7 @@ module.exports = {
 		'@vue/standard'
 	],
 	rules: {
+		'generator-star-spacing': 'off',
 		'indent': ['error', 'tab'],
 		'no-tabs': 'off',
 		'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',

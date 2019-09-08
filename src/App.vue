@@ -36,4 +36,21 @@ export default {
 	opacity: 0;
 	transform: translateX($space-xl);
 }
+
+.background-canvas {
+	height: 100vh;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100vw;
+
+	&__overlay {
+		background-image: radial-gradient(transparentize($gray-10, 0.8), transparentize($gray-10, 0.2));
+		height: 100vh;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100vw;
+	}
+}
 </style>
