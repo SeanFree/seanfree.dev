@@ -7,8 +7,8 @@
 				p.about-page__text Hello there!
 				p.about-page__text My name is Sean Free.
 				p.about-page__text I'm a web development enthusiast and creative coding hobbyist.
-				p.about-page__text I currently work as a software engineer at&nbsp;
-					a(href="https://www.unum.com/" target="_blank") Unum-US
+				p.about-page__text I currently work as a Microsoft Collaboration Consultant at&nbsp;
+					a(href="https://thrivenextgen.com/" target="_blank" rel="noreferrer") Thrive
 					| .
 </template>
 
