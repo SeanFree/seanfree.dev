@@ -1,0 +1,11 @@
+@import
+  "./2_generic/index.scss",
+  "./3_settings/index.scss";
+
+body {
+  margin: 0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
