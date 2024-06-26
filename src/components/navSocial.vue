@@ -34,10 +34,6 @@ export default {
 					href: 'https://github.com/SeanFree'
 				},
 				{
-					name: 'twitter',
-					href: 'https://twitter.com/stolentext'
-				},
-				{
 					name: 'linkedin',
 					href: 'https://www.linkedin.com/in/sean-free-501a8611b/'
 				}
