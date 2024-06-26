@@ -35,7 +35,7 @@ export default {
 				},
 				{
 					name: 'linkedin',
-					href: 'https://www.linkedin.com/in/sean-free-501a8611b/'
+					href: 'https://www.linkedin.com/in/sean-free'
 				}
 			]
 		}
