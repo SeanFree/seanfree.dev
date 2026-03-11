@@ -50,9 +50,29 @@ const onMouseEnter = ({ clientX, clientY }: MouseEvent) => {
   })
 }
 
+const onTouchStart = ({ touches }: TouchEvent) => {
+  const { clientX, clientY } = touches[0]!
+
+  worker.post({
+    type: 'mouseenter',
+    x: clientX,
+    y: clientY,
+  })
+}
+
 const onMouseMove = ({ clientX, clientY }: MouseEvent) => {
   worker.post({
     type: 'mousemove',
+    x: clientX,
+    y: clientY,
+  })
+}
+
+const onTouchMove = ({ touches }: TouchEvent) => {
+  const { clientX, clientY } = touches[0]!
+
+  worker.post({
+    type: 'mouseenter',
     x: clientX,
     y: clientY,
   })
@@ -85,8 +105,11 @@ onMounted(() => {
   document.body.addEventListener('theme-change', onThemeChange)
   document.body.addEventListener('route-change', onRouteChange)
   document.body.addEventListener('mouseenter', onMouseEnter)
+  document.body.addEventListener('touchstart', onTouchStart)
   document.body.addEventListener('mousemove', onMouseMove)
+  document.body.addEventListener('touchmove', onTouchMove)
   document.body.addEventListener('mouseleave', onMouseLeave)
+  document.body.addEventListener('touchend', onMouseLeave)
 })
 
 onUnmounted(() => {
@@ -97,6 +120,7 @@ onUnmounted(() => {
   document.body.removeEventListener('mouseenter', onMouseEnter)
   document.body.removeEventListener('mousemove', onMouseMove)
   document.body.removeEventListener('mouseleave', onMouseLeave)
+  document.body.removeEventListener('touchleave', onMouseLeave)
 })
 </script>
 
