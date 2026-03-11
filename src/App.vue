@@ -30,7 +30,10 @@ const socialLinks = [
   >
     <AppBackground />
     <header class="w-full">
-      <div class="relative container flex items-center justify-between p-4">
+      <div
+        class="relative container flex items-start justify-between p-4
+          md:items-center"
+      >
         <div class="flex items-center gap-4">
           <Logo
             class="fill-primary size-12 transition-colors duration-200"
@@ -39,14 +42,14 @@ const socialLinks = [
 
           <div class="relative self-stretch flex items-center">
             <Transition name="slide-up-fade-out">
-              <h1 class="heading-sm mb-0" :key="$route.path">
+              <h1 :key="$route.path" class="heading-sm mb-0">
                 {{ route.meta.title }}
               </h1>
             </Transition>
           </div>
         </div>
 
-        <AppNav />
+        <AppNav class="absolute right-4 z-10" />
       </div>
     </header>
 

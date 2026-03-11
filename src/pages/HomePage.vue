@@ -8,11 +8,11 @@ import seanFreePhoto from '/sean-free-photo.png?url'
       bg-neutral-softest/65 backdrop-blur-md rounded-full py-2 pl-2 pr-10 border
       border-neutral-softer"
   >
-    <div class="overflow-hidden rounded-full size-40">
+    <div class="overflow-hidden rounded-full size-32 md:size-40 shrink-0">
       <img :src="seanFreePhoto" />
     </div>
     <div class="flex h-full flex-col items-start justify-center gap-3">
-      <h2 class="heading-2xl">Sean Free</h2>
+      <h2 class="heading-lg md:heading-2xl">Sean Free</h2>
       <div
         class="after:bg-primary after:block after:h-2 after:w-16
           after:rounded-full"

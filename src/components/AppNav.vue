@@ -23,7 +23,7 @@ const routerLinks = [
 </script>
 
 <template>
-  <div class="flex flex-row-reverse items-center">
+  <div class="flex flex-col items-end md:flex-row-reverse md:items-center">
     <UiButton
       variant="ghost"
       rounded
@@ -35,7 +35,7 @@ const routerLinks = [
       @click="isOpen = !isOpen"
     />
     <nav id="app-nav" class="p-2">
-      <ul class="flex items-center gap-2">
+      <ul class="flex items-end gap-2 flex-col md:flex-row-reverse">
         <li
           v-for="({ name, to }, i) in routerLinks"
           :key="name"
@@ -45,7 +45,8 @@ const routerLinks = [
             :to="to"
             data-color="primary"
             class="flex items-center rounded-full px-3 py-1 text-right
-              transition-all"
+              transition-all bg-neutral-softest border border-neutral-softer
+              md:border-0 md:bg-transparent"
             :class="{
               'text-neutral-strong': route.path === to,
               'pointer-events-none translate-x-4 opacity-0': !isOpen,

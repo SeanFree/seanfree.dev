@@ -4,29 +4,29 @@
 }
 
 @utility heading-2xl {
-  @apply text-5xl font-semibold;
+  @apply text-4xl font-semibold md:text-5xl;
 }
 
 @utility heading-xl {
-  @apply text-4xl font-semibold;
+  @apply text-3xl font-semibold md:text-4xl;
 }
 
 @utility heading-lg {
-  @apply text-3xl font-semibold;
+  @apply text-2xl font-semibold md:text-3xl;
 }
 
 @utility heading-md {
-  @apply text-2xl font-semibold;
+  @apply text-xl font-semibold md:text-2xl;
 }
 
 @utility heading-sm {
-  @apply text-xl font-semibold;
+  @apply text-ld font-semibold md:text-xl;
 }
 
 @utility heading-xs {
-  @apply text-lg font-semibold;
+  @apply text-base font-semibold md:text-lg;
 }
 
 @utility heading-2xs {
-  @apply font-semibold;
+  @apply text-sm font-semibold md:text-base;
 }

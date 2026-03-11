@@ -23,7 +23,7 @@ const projects: ProjectItem[] = [
       'An audio app with a fractal visualizer. This app is built with a fully custom WebGL + Web Audio implementation, no libraries. All shader uniforms are exposed in the UI and can be mapped to audio frequency channels to tune the visualizer.',
     logoUrl: fractoidLogo,
     previewUrl: fractoidPreview,
-    tools: ['Vue', 'Quasar', 'TypeScript', 'WebGL', 'GLSL'],
+    tools: ['Vue', 'TypeScript', 'WebGL', 'GLSL'],
   },
   {
     title: 'Classtab Dark Mode',
@@ -47,12 +47,12 @@ const projects: ProjectItem[] = [
           {{ project.title }}
         </h2>
       </template>
-      <div class="flex items-start gap-4">
+      <div class="flex items-start gap-4 flex-col md:flex-row">
         <p class="mb-4">{{ project.description }}</p>
 
         <figure
-          class="overflow-hidden rounded-md shrink-0 w-72 border-neutral-softer
-            border"
+          class="overflow-hidden rounded-md shrink-0 max-w-84
+            border-neutral-softer border"
         >
           <img :src="project.previewUrl" class="h-full" />
         </figure>

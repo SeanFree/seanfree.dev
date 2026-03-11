@@ -28,7 +28,7 @@ const themeName = computed({
   },
 })
 
-const isOpen = ref(false)
+const isOpen = ref(true)
 const isDark = computed(() => theme.value.endsWith('dark'))
 
 const toggleDarkTheme = () => {
