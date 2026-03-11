@@ -17,7 +17,7 @@ interface ProjectItem {
 const projects: ProjectItem[] = [
   {
     title: 'Fractoid',
-    url: 'https://fractoid.dev',
+    url: 'https://www.fractoid.dev',
     sourceUrl: 'https://github.com/seanfree/fractoid',
     description:
       'An audio app with a fractal visualizer. This app is built with a fully custom WebGL + Web Audio implementation, no libraries. All shader uniforms are exposed in the UI and can be mapped to audio frequency channels to tune the visualizer.',

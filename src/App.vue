@@ -36,7 +36,8 @@ const socialLinks = [
       >
         <div class="flex items-center gap-4">
           <Logo
-            class="fill-primary size-12 transition-colors duration-200"
+            class="fill-primary md:size-12 size-10 transition-colors
+              duration-200"
             role="presentation"
           />
 
