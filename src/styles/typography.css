@@ -20,7 +20,7 @@
 }
 
 @utility heading-sm {
-  @apply text-ld font-semibold md:text-xl;
+  @apply text-lg font-semibold md:text-xl;
 }
 
 @utility heading-xs {
