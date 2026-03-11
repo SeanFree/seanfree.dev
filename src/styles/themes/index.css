@@ -1,0 +1,49 @@
+@import './mint.css';
+@import './ocean.css';
+@import './sienna.css';
+
+[data-theme]:not([data-theme$='dark']) {
+  /* Error */
+  --theme-color-error-softer: var(--color-red-300);
+  --theme-color-error-soft: var(--color-red-400);
+  --theme-color-error: var(--color-red-500);
+  --theme-color-error-strong: var(--color-red-600);
+  --theme-color-error-stronger: var(--color-red-700);
+
+  /* Warning */
+  --theme-color-warning-softer: var(--color-yellow-300);
+  --theme-color-warning-soft: var(--color-yellow-400);
+  --theme-color-warning: var(--color-yellow-500);
+  --theme-color-warning-strong: var(--color-yellow-600);
+  --theme-color-warning-stronger: var(--color-yellow-700);
+
+  /* Success */
+  --theme-color-success-softer: var(--color-green-200);
+  --theme-color-success-soft: var(--color-green-300);
+  --theme-color-success: var(--color-green-400);
+  --theme-color-success-strong: var(--color-green-600);
+  --theme-color-success-stronger: var(--color-green-700);
+}
+
+[data-theme$='dark'] {
+  /* Error */
+  --theme-color-error-softer: var(--color-red-900);
+  --theme-color-error-soft: var(--color-red-800);
+  --theme-color-error: var(--color-red-700);
+  --theme-color-error-strong: var(--color-red-600);
+  --theme-color-error-stronger: var(--color-red-500);
+
+  /* Warning */
+  --theme-color-warning-softer: var(--color-yellow-900);
+  --theme-color-warning-soft: var(--color-yellow-800);
+  --theme-color-warning: var(--color-yellow-700);
+  --theme-color-warning-strong: var(--color-yellow-600);
+  --theme-color-warning-stronger: var(--color-yellow-500);
+
+  /* Success */
+  --theme-color-success-softer: var(--color-green-900);
+  --theme-color-success-soft: var(--color-green-800);
+  --theme-color-success: var(--color-green-700);
+  --theme-color-success-strong: var(--color-green-600);
+  --theme-color-success-stronger: var(--color-green-500);
+}

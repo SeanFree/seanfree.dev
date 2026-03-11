@@ -1,0 +1,41 @@
+[data-theme='mint'] {
+  --theme-color-app-bg: var(--color-green-50);
+  --theme-color-neutral-softest: var(--color-cool-gray-100);
+  --theme-color-neutral-softer: var(--color-cool-gray-200);
+  --theme-color-neutral-soft: var(--color-cool-gray-400);
+  --theme-color-neutral: var(--color-cool-gray-600);
+  --theme-color-neutral-strong: var(--color-cool-gray-800);
+  --theme-color-neutral-stronger: var(--color-cool-gray-900);
+  --theme-color-neutral-strongest: var(--color-cool-gray-950);
+  --theme-color-primary-softer: var(--color-teal-100);
+  --theme-color-primary-soft: var(--color-teal-200);
+  --theme-color-primary: var(--color-teal-400);
+  --theme-color-primary-strong: var(--color-teal-600);
+  --theme-color-primary-stronger: var(--color-teal-800);
+  --theme-color-secondary-softer: var(--color-purple-300);
+  --theme-color-secondary-soft: var(--color-purple-400);
+  --theme-color-secondary: var(--color-purple-500);
+  --theme-color-secondary-strong: var(--color-purple-800);
+  --theme-color-secondary-stronger: var(--color-purple-950);
+}
+
+[data-theme='mint-dark'] {
+  --theme-color-app-bg: var(--color-cool-gray-900);
+  --theme-color-neutral-softest: var(--color-cool-gray-800);
+  --theme-color-neutral-softer: var(--color-cool-gray-700);
+  --theme-color-neutral-soft: var(--color-cool-gray-500);
+  --theme-color-neutral: var(--color-cool-gray-400);
+  --theme-color-neutral-strong: var(--color-cool-gray-300);
+  --theme-color-neutral-stronger: var(--color-cool-gray-200);
+  --theme-color-neutral-strongest: var(--color-cool-gray-50);
+  --theme-color-primary-softer: var(--color-teal-900);
+  --theme-color-primary-soft: var(--color-teal-800);
+  --theme-color-primary: var(--color-teal-600);
+  --theme-color-primary-strong: var(--color-teal-400);
+  --theme-color-primary-stronger: var(--color-teal-200);
+  --theme-color-secondary-softer: var(--color-purple-950);
+  --theme-color-secondary-soft: var(--color-purple-900);
+  --theme-color-secondary: var(--color-purple-600);
+  --theme-color-secondary-strong: var(--color-purple-500);
+  --theme-color-secondary-stronger: var(--color-purple-300);
+}

@@ -1,0 +1,41 @@
+[data-theme='sienna'] {
+  --theme-color-app-bg: var(--color-orange-50);
+  --theme-color-neutral-softest: var(--color-warm-gray-100);
+  --theme-color-neutral-softer: var(--color-warm-gray-200);
+  --theme-color-neutral-soft: var(--color-warm-gray-400);
+  --theme-color-neutral: var(--color-warm-gray-600);
+  --theme-color-neutral-strong: var(--color-warm-gray-800);
+  --theme-color-neutral-stronger: var(--color-warm-gray-900);
+  --theme-color-neutral-strongest: var(--color-warm-gray-950);
+  --theme-color-primary-softer: var(--color-orange-100);
+  --theme-color-primary-soft: var(--color-orange-200);
+  --theme-color-primary: var(--color-orange-400);
+  --theme-color-primary-strong: var(--color-orange-500);
+  --theme-color-primary-stronger: var(--color-orange-700);
+  --theme-color-secondary-softer: var(--color-blue-100);
+  --theme-color-secondary-soft: var(--color-blue-200);
+  --theme-color-secondary: var(--color-blue-400);
+  --theme-color-secondary-strong: var(--color-blue-500);
+  --theme-color-secondary-stronger: var(--color-blue-700);
+}
+
+[data-theme='sienna-dark'] {
+  --theme-color-app-bg: var(--color-warm-gray-900);
+  --theme-color-neutral-softest: var(--color-warm-gray-800);
+  --theme-color-neutral-softer: var(--color-warm-gray-700);
+  --theme-color-neutral-soft: var(--color-warm-gray-500);
+  --theme-color-neutral: var(--color-warm-gray-400);
+  --theme-color-neutral-strong: var(--color-warm-gray-300);
+  --theme-color-neutral-stronger: var(--color-warm-gray-200);
+  --theme-color-neutral-strongest: var(--color-warm-gray-50);
+  --theme-color-primary-softer: var(--color-orange-950);
+  --theme-color-primary-soft: var(--color-orange-900);
+  --theme-color-primary: var(--color-orange-700);
+  --theme-color-primary-strong: var(--color-orange-500);
+  --theme-color-primary-stronger: var(--color-orange-300);
+  --theme-color-secondary-softer: var(--color-blue-900);
+  --theme-color-secondary-soft: var(--color-blue-800);
+  --theme-color-secondary: var(--color-blue-600);
+  --theme-color-secondary-strong: var(--color-blue-400);
+  --theme-color-secondary-stronger: var(--color-blue-200);
+}

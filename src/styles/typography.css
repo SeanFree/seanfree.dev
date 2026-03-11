@@ -1,0 +1,32 @@
+@theme {
+  --font-sans: 'Lexend', system-ui, sans-serif;
+  --font-mono: 'Anonymous Pro', ui-monospace, monospace;
+}
+
+@utility heading-2xl {
+  @apply text-5xl font-semibold;
+}
+
+@utility heading-xl {
+  @apply text-4xl font-semibold;
+}
+
+@utility heading-lg {
+  @apply text-3xl font-semibold;
+}
+
+@utility heading-md {
+  @apply text-2xl font-semibold;
+}
+
+@utility heading-sm {
+  @apply text-xl font-semibold;
+}
+
+@utility heading-xs {
+  @apply text-lg font-semibold;
+}
+
+@utility heading-2xs {
+  @apply font-semibold;
+}

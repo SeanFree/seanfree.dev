@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+@import './colors.css';
+@import './themes/index.css';
+@import './typography.css';
+@import './utilities.css';
+
+@custom-variant dark
+  (&:where([data-theme$=dark], [data-theme$=dark] *));
+
+@layer base {
+  html,
+  body {
+    @apply bg-app text-neutral-strong overflow-hidden font-sans;
+
+    font-size: 16px;
+  }
+
+  a,
+  button {
+    @apply clickable;
+  }
+
+  a[data-color='primary'] {
+    @apply text-primary hover:text-primary-strong focusable hover:underline;
+  }
+
+  a[data-color='secondary'],
+  a:not([data-color]) {
+    @apply text-secondary hover:text-secondary-strong focusable-secondary hover:underline;
+  }
+
+  p {
+    @apply leading-6;
+  }
+
+  *::selection {
+    @apply bg-primary-soft text-neutral-strong;
+  }
+}

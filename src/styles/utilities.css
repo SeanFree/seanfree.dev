@@ -1,0 +1,112 @@
+@utility container {
+  @apply mx-auto max-w-7xl;
+}
+
+@utility clickable {
+  @apply active:scale-[0.96];
+}
+
+@utility focusable {
+  @apply outline-2 outline-transparent;
+
+  &:focus {
+    @apply outline-primary-strong;
+  }
+}
+
+@utility focusable-secondary {
+  @apply outline-2 outline-transparent;
+
+  &:focus {
+    @apply outline-secondary-strong;
+  }
+}
+
+@utility focusable-error {
+  @apply outline-2 outline-transparent;
+
+  &:focus {
+    @apply outline-error-strong;
+  }
+}
+
+@utility focusable-warning {
+  @apply outline-2 outline-transparent;
+
+  &:focus {
+    @apply outline-warning-strong;
+  }
+}
+
+@utility focusable-success {
+  @apply outline-2 outline-transparent;
+
+  &:focus {
+    @apply outline-success-strong;
+  }
+}
+
+@utility focusable {
+  @apply outline-2 outline-transparent;
+
+  &:focus {
+    @apply outline-primary-strong;
+  }
+}
+
+@utility focusable-secondary {
+  @apply outline-2 outline-transparent;
+
+  &:focus {
+    @apply outline-secondary-strong;
+  }
+}
+
+@utility scrollable {
+  scrollbar-color: var(--color-neutral-soft) transparent;
+  scrollbar-width: thin;
+}
+
+@utility scroll-x {
+  @apply scrollable overflow-x-auto;
+}
+
+@utility scroll-y {
+  @apply scrollable overflow-y-auto;
+}
+
+@utility scroll-xy {
+  @apply scrollable overflow-y-auto;
+}
+
+@utility content {
+  & > [class^='heading'] {
+    @apply py-4;
+  }
+
+  .heading-2xl .heading-xl {
+    @apply mb-4;
+  }
+
+  .heading-lg,
+  .heading-md {
+    @apply mb-3;
+  }
+
+  .heading-sm,
+  .heading-xs {
+    @apply mb-2;
+  }
+
+  .heading-2xs {
+    @apply mb-1;
+  }
+
+  & ul {
+    @apply list-disc pl-6;
+  }
+
+  & ol {
+    @apply list-decimal pl-6;
+  }
+}

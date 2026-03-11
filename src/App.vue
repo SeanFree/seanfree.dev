@@ -1,56 +1,112 @@
-<template lang="pug">
-	div#app.page-wrapper
-		page-header
-		transition(name="fade" mode="out-in")
-			router-view
-		page-footer
-</template>
+<script setup lang="ts">
+import Logo from '@/assets/logo-basic.svg'
+import { useRoute } from 'vue-router'
 
-<script>
-import pageHeader from '@/components/pageHeader'
-import pageTemplate from '@/components/pageTemplate'
-import pageFooter from '@/components/pageFooter'
+const route = useRoute()
 
-export default {
-	name: 'App',
-	components: {
-		pageHeader,
-		pageTemplate,
-		pageFooter
-	}
-}
+const socialLinks = [
+  {
+    name: 'LinkedIn',
+    to: 'https://linkedin.com/in/sean-free',
+    icon: 'ph-linkedin-logo',
+  },
+  {
+    name: 'GitHub',
+    to: 'https://github.com/seanfree',
+    icon: 'ph-github-logo',
+  },
+  {
+    name: 'CodePen',
+    to: 'https://codepen.io/seanfree',
+    icon: 'ph-codepen-logo',
+  },
+]
 </script>
 
-<style lang="scss">
-@import "./styles/generic/reset.css";
-@import "./styles/main.scss";
+<template>
+  <div
+    class="fixed grid h-screen w-screen grid-cols-1
+      grid-rows-[auto_minmax(80vh,1fr)_auto]"
+  >
+    <AppBackground />
+    <header class="w-full">
+      <div class="relative container flex items-center justify-between p-4">
+        <div class="flex items-center gap-4">
+          <Logo
+            class="fill-primary size-12 transition-colors duration-200"
+            role="presentation"
+          />
 
-.fade-enter-active,
-.fade-leave-active {
-	transform: translateX(0);
-  transition: opacity $transition-duration-m, transform $transition-duration-m;
+          <div class="relative self-stretch flex items-center">
+            <Transition name="slide-up-fade-out">
+              <h1 class="heading-sm mb-0" :key="$route.path">
+                {{ route.meta.title }}
+              </h1>
+            </Transition>
+          </div>
+        </div>
+
+        <AppNav />
+      </div>
+    </header>
+
+    <main class="container h-full p-4 scroll-xy relative">
+      <RouterView v-slot="{ Component }">
+        <Transition name="slide-up-fade-out" appear>
+          <component :is="Component" :key="route.name" />
+        </Transition>
+      </RouterView>
+    </main>
+
+    <footer class="relative">
+      <div class="container flex items-center justify-between">
+        <nav class="p-4">
+          <ul class="flex items-center gap-4">
+            <li v-for="{ name, to, icon } in socialLinks" :key="name">
+              <a
+                :href="to"
+                class="flex items-center rounded-full p-2 transition-all
+                  no-underline"
+                rel="noopener noreferrer"
+                target="_blank"
+                data-color="secondary"
+              >
+                <i :class="icon" class="ph text-xl" role="presentation"></i>
+                <span class="sr-only">{{ name }}</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="p-4">
+          <ThemeSelector />
+        </div>
+      </div>
+    </footer>
+  </div>
+</template>
+
+<style scoped>
+.slide-up-fade-out-enter-active,
+.slide-up-fade-out-leave-active {
+  position: absolute;
+  transition: all 300ms ease;
 }
 
-.fade-enter,
-.fade-leave-active {
-	opacity: 0;
-	transform: translateX($space-xl);
+.slide-up-fade-out-enter-active {
+  transition-delay: 100ms;
 }
 
-.background-canvas {
-	height: 100vh;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 100vw;
+.slide-up-fade-out-enter-from {
+  transform: translateY(18px);
+}
 
-	&__overlay {
-		background-image: radial-gradient(transparentize($gray-10, 0.8), transparentize($gray-10, 0.2));
-		height: 100vh;
-		left: 0;
-		position: absolute;
-		top: 0;
-		width: 100vw;
-	}
+.slide-up-fade-out-leave-to {
+  transform: translateY(-18px);
+}
+
+.slide-up-fade-out-enter-from,
+.slide-up-fade-out-leave-to {
+  opacity: 0;
 }
 </style>
