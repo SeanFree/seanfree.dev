@@ -11,7 +11,9 @@ import seanFreePhoto from '/sean-free-photo.png?url'
     <div class="overflow-hidden rounded-full size-32 md:size-40 shrink-0">
       <img :src="seanFreePhoto" />
     </div>
-    <div class="flex h-full flex-col items-start justify-center gap-3">
+    <div
+      class="flex h-full flex-col items-start justify-center gap-1.5 md:gap-3"
+    >
       <h2 class="heading-lg md:heading-2xl">Sean Free</h2>
       <div
         class="after:bg-primary after:block after:h-2 after:w-16

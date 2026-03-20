@@ -26,7 +26,7 @@ const socialLinks = [
 <template>
   <div
     class="grid h-dvh w-screen grid-cols-1
-      grid-rows-[auto_minmax(80vh,1fr)_auto]"
+      grid-rows-[auto_minmax(80dvh,1fr)_auto]"
   >
     <AppBackground />
     <header class="w-full">
@@ -65,7 +65,7 @@ const socialLinks = [
     <footer class="relative">
       <div class="container flex items-center justify-between">
         <nav class="p-4">
-          <ul class="flex items-center gap-4">
+          <ul class="flex items-center gap-3">
             <li v-for="{ name, to, icon } in socialLinks" :key="name">
               <a
                 :href="to"
