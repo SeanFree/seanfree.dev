@@ -25,7 +25,7 @@ const socialLinks = [
 
 <template>
   <div
-    class="fixed grid h-dvh w-screen grid-cols-1
+    class="grid h-dvh w-screen grid-cols-1
       grid-rows-[auto_minmax(80vh,1fr)_auto]"
   >
     <AppBackground />
