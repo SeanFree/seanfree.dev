@@ -83,7 +83,7 @@ const onMouseLeave = () => {
 }
 
 onMounted(() => {
-  const offscreenCanvas = canvas.value?.transferControlToOffscreen()!
+  const offscreenCanvas = canvas.value!.transferControlToOffscreen()!
 
   worker.post(
     {

@@ -47,7 +47,7 @@ defineSlots<{
     >
       <slot />
     </div>
-    <footer :class="paddingClass" class="rounded-b-lg" v-if="$slots.footer">
+    <footer v-if="$slots.footer" :class="paddingClass" class="rounded-b-lg">
       <slot name="footer" />
     </footer>
   </section>

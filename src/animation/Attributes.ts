@@ -1,8 +1,7 @@
-type AttributesIteratorFunc<R = void> = (values: number[], index: number) => R
-
-interface ArrayWithLength<N extends number, T> extends Array<T> {
-  length: N
-}
+type AttributesIteratorFunc<R = void> = (
+  values: Float32Array,
+  index: number,
+) => R
 
 export class Attributes {
   readonly count: number
@@ -25,18 +24,15 @@ export class Attributes {
   }
 
   set(a: number[], i: number, normalize = false) {
-    normalize && (i *= this.spread)
+    if (normalize) i *= this.spread
 
     this.values.set(a, i)
   }
 
   get(i: number, normalize = false) {
-    normalize && (i *= this.spread)
+    if (normalize) i *= this.spread
 
-    return [...this.values.slice(i, i + this.spread)] as ArrayWithLength<
-      this['spread'],
-      number
-    >
+    return this.values.slice(i, i + this.spread)
   }
 
   forEach(cb: AttributesIteratorFunc) {
