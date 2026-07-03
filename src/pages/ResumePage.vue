@@ -61,10 +61,12 @@ const items: ExperienceItem[] = [
     dateEnd: 'Present',
     url: 'https://rialtic.io',
     notes: [
-      'Maintained multiple apps in a pnpm monorepo built with Nuxt',
-      'Implemented bot detection for admin login flow using Cloudflare Turnstile',
-      'Managed weekly production deployments in coordination with cloud engineering',
-      'Defined and maintained data contracts for proprietary claim schema',
+      'Maintained NX monorepo housing internal and external apps built with Nuxt, Vue, and TypeScript',
+      'Contributed to core policy management API built with Node and NestJS',
+      'Collaborated with engines team to architect interactive policy engine visualization using VueFlow',
+      'Managed weekly production deployments with GitLab CI and Cloudflare',
+      'Integrated Storybook with internal custom UI component library in collaboration with UX team',
+      'Architected solution for processing policy documents to embed text using OCRmyPDF with Python',
     ],
   },
   {
